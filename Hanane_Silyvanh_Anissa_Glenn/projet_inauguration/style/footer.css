@@ -1,0 +1,53 @@
+footer {
+  position:relative;
+  bottom:0;
+  width:100%;
+  padding-top:40px;
+  height:180px;
+  color:gray;
+  font-size: 1em;
+}
+
+/* redimention et placement du footer en bas de page */
+#foot {
+  padding-left: 2em;
+  margin-top: -2.2em;
+  width:98%;
+  height: auto;
+}
+
+/* redimension cellule du footer */
+#foot tr td {
+  width: 20%;
+  max-width: 20%;
+  text-align: center;
+}
+
+#foot a{
+  text-decoration: none;
+  color: gray;
+  border-radius: 0.2em;
+}
+
+#foot a:hover {
+  color: #F71073;
+}
+
+#img_srp{
+  text-align: center;
+  width:260%;
+  height: 65%;
+}
+
+/* redimension icone réseaux sociaux */
+.img_icon img{
+  width:15%;
+  height:15%;
+}
+
+#img_fleche_droite {
+  width:15%;
+  height:15%;
+  margin-right: -4em;
+  float:left;
+}

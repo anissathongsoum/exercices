@@ -1,0 +1,17 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+    <Pluquet Mathieu> -- <dev> -- <mathieu.pluquet@laposte.net>
+    <Rimmer Glenn> -- <dev> -- <glennrimmer.ecolesrp@gmail.com>
+    <Canevet Julie> -- <dev> -- <julie.canevet@hotmail.fr>
+    <Thongsoum Anissa> -- <dev> -- <anissathongsoum.ecolesrp@gmail.com>
+
+# THANKS
+
+    <Simplon>
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    Apache Server Configs, jQuery, Modernizr, Normalize.css

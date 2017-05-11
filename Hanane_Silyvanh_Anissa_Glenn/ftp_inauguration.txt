@@ -1,0 +1,4 @@
+Nom d'hôte FTP: ftp.hachedeuxo.pe.hu
+Nom d'utilisateur FTP: u889475816
+Mot de passe FTP: qYgj3KZq61ft
+Port FTP: 21

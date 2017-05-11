@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>header</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- ajouts liaisons -->
+    <link rel="stylesheet" href="style/header.css">
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script>var changeClass = function (r,className1,className2) {
+          var regex = new RegExp("(?:^|\\s+)" + className1 + "(?:\\s+|$)");
+      	if( regex.test(r.className) ) {
+      		r.className = r.className.replace(regex,' '+className2+' ');
+      	}
+      	else{
+      		r.className = r.className.replace(new RegExp("(?:^|\\s+)" + className2 + "(?:\\s+|$)"),' '+className1+' ');
+      	}
+      	return r.className;
+      };
+
+      //  Creating our button in JS for smaller screens
+      var menuElements = document.getElementById('menu');
+      menuElements.insertAdjacentHTML('afterBegin','<button type="button" id="menutoggle" class="navtoogle" aria-hidden="true"><i aria-hidden="true" class="icon-menu"> </i> Menu</button>');
+
+      //  Toggle the class on click to show / hide the menu
+      document.getElementById('menutoggle').onclick = function() {
+      	changeClass(this, 'navtoogle active', 'navtoogle');
+      }
+
+      // http://tympanus.net/codrops/2013/05/08/responsive-retina-ready-menu/comment-page-2/#comment-438918
+      document.onclick = function(e) {
+      	var mobileButton = document.getElementById('menutoggle'),
+      	buttonStyle =  mobileButton.currentStyle ? mobileButton.currentStyle.display : getComputedStyle(mobileButton, null).display;
+
+      	if(buttonStyle === 'block' && e.target !== mobileButton && new RegExp(' ' + 'active' + ' ').test(' ' + mobileButton.className + ' ')) {
+      		changeClass(mobileButton, 'navtoogle active', 'navtoogle');
+      	}
+      }
+      </script>
+  </head>
+  <body>
+    <header>
+      <div id="showroomprive_logo"><img src="images/showroomprive.png" title="showroomprive" alt="logo de showroomprivé"/></div>
+
+      <div class ="container">
+      <nav id="menu" class="nav">
+        <ul>
+           <li>
+          <a  href="accueil.php" title="accueil">
+            <span  class="icon"> <i aria-hidden="true"></i></span><span>Accueil</span>
+          </a>
+           </li>
+           <li>
+              <a href="ecole.php" title="ecole"><span class="icon"> <i aria-hidden="true" ></i></span><span>L'école</span></a>
+           </li>
+           <li>
+              <a  href="partenaire.php" title="partenaire"><span  class="icon"><i  aria-hidden="true"></i></span><span>Partenaires</span></a>
+           </li>
+           <li>
+              <a  href="equipe.php" title="equipe"><span  class="icon"><i  aria-hidden="true"></i></span><span>L'équipe</span></a>
+           </li>
+           <li>
+              <a  href="evenements.php" title="evenements"><span  class="icon"><i  aria-hidden="true"></i></span><span>Nos événements</span></a>
+           </li>
+           <li>
+              <a  href="contact.php" title="contact"><span  class="icon"><i  aria-hidden="true"></i></span><span>Contact</span></a>
+           </li>
+        </ul>
+      </div><!--end container-->
+    </header>
+      </body>
+    </html>
+  </body>
+</html>

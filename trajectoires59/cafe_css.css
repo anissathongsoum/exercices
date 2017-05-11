@@ -1,0 +1,74 @@
+
+   /* DEBUT Anissa */
+   .titre_cafe {
+       margin-left: 1em;
+       font-family: 'Lobster Two', cursive;
+       font-size: 3em;
+       color: #FFFF1A;
+       text-shadow: -2px 2px 5px #4d4d00;
+     }
+     .adresse {
+       width: 80%;
+       margin-left: 10%;
+     }
+
+   .formulaire{
+     padding-right: 200px;
+     padding-left: 40px;
+     margin-left: auto;
+     margin-right: auto;
+   }
+
+
+   .style{
+     border: 2px solid grey;
+      width: 250px;
+      height: 300px;
+      margin:0;
+      background-color: white;
+   }
+
+   .adresse{
+     border: 2px solid grey;
+      width: 250px;
+      height: 200px;
+      margin: 0;
+      background-color: white;
+   }
+   .envoyer{
+     width: 100px;
+     height:30px;
+     text-align: center;
+   }
+   .prenom{
+     width: 100px;
+     height:20px;
+     text-align: center;
+   }
+   .nom{
+       width: 100px;
+       height:20px;
+       text-align: center;
+   }
+   .adresse2{
+     width:170px;
+     height:20px;
+
+   }
+   .message{
+     width: 250px;
+     height:100px;
+     text-align: center;
+   }
+   .cafe_body{
+     font-size: 10px;
+     background: url(img/voiture.) no-repeat center;
+   }
+   .image{
+     width:100%;
+     background-repeat: no-repeat;
+   }
+
+
+
+   /* FIN Anissa */
